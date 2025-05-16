@@ -37,6 +37,9 @@ nav li a {
   margin: 0 5px;
   text-decoration: none;
 }
+nav ul#user_info {
+  display: none;
+}
 /* form */
 .section-form {
   position: absolute;
@@ -52,8 +55,6 @@ nav li a {
   font-size: 50px;
   letter-spacing: 2px;
   color: rgb(227, 100, 220);
-}
-.section-form form {
 }
 .section-form form input {
   display: block;
