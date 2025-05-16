@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "oswald", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content .brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li a {
+  display: flex;
+  color: #fff;
+  min-width: 50px;
+  background: #333;
+  padding: 5px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+/* form */
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  background: #1495e5;
+  padding: 20px;
+}
+.section-form h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: rgb(227, 100, 220);
+}
+.section-form form {
+}
+.section-form form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #f9f9f9;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "oswald", sans-serif;
+}
+.section-form form input[type="submit"] {
+  cursor: pointer;
+  font-size: 25;
+  text-transform: uppercase;
+  height: auto;
+}
+.section-form form input[type="submit"]:hover {
+  background: #fff;
+  color: #333;
+  opacity: 0.8;
+  transition: 0.5s;
+  outline: 0;
+}
