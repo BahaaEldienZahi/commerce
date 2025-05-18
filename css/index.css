@@ -39,6 +39,32 @@ nav li a {
 }
 nav ul#user_info {
   display: none;
+  align-items: center;
+}
+nav ul#user_info li {
+  position: relative;
+  margin: 0 7px;
+}
+
+nav ul#user_info li i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul#user_info li .badge {
+  width: 20px;
+  height: 20px;
+  background: #c42626;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: -9px;
+  right: 40px;
+  line-height: 20px;
 }
 /* form */
 .section-form {
@@ -91,7 +117,7 @@ nav ul#user_info {
   display: flex;
   width: 100%;
   border: 1px solid #ddd;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   min-height: 100px;
 }
 
@@ -125,7 +151,6 @@ nav ul#user_info {
   margin-left: auto;
   cursor: pointer;
   width: 30px;
-  
 }
 
 .product-item .add-to-cart:hover {
@@ -133,4 +158,3 @@ nav ul#user_info {
   color: rgb(58, 130, 54);
   transition: 0.5s;
 }
-

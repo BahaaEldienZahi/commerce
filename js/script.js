@@ -32,41 +32,41 @@ let productDom = document.querySelector(".products");
 let products = [
     {
         id: 1,
-        title: "iphone 14",
-        price: 100,
+        name: "iphone 14",
+        price: "100$",
         imageUrl: "img/product-1.jpg",
     },
     {
         id: 2,
-        title: "iphone 14 pro",
-        price: 200,
+        name: "iphone 14 pro",
+        price: "200$",
         imageUrl: "img/product-2.jpg",
     },
     {
         id: 3,
-        title: "iphone 14 pro max",
-        price: 300,
+        name: "iphone 14 pro max",
+        price: "300$",
         imageUrl: "img/product-3.jpg",
     },
     {
         id: 4,
-        title: "iphone 14",
-        price: 400,
+        name: "iphone 14",
+        price: "400$",
         imageUrl: "img/product-7.jpg"
     },
     {
         id: 5,
-        title: "iphone 14 pro",
-        price: 500,
+        name: "iphone 14 pro",
+        price: "500$",
         imageUrl: "img/product-8.jpg"
     },
     {
         id: 6,
-        title: "iphone 14 pro max",
-        price: 600,
+        name: "iphone 14 pro max",
+        price: "600$",
         imageUrl: "img/product-9.jpg"
     },
-    
+
 
 ];
 
@@ -80,12 +80,12 @@ function drawProductsUI() {
                 alt="product"
             />
             <div class="product-item-desc">
-                <h2>${item.title}</h2>
+                <h2>${item.name}</h2>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                 <span>${item.price}</span>
             </div>
             <div class="product-item-action">
-                <button class="add-to-cart">add to cart</button>
+                <button class="add-to-cart" onclick="addedToCart(${item.id})">add to cart</button>
                 <i class="favorit far fa-heart"></i>
             </div>
         </div>
@@ -94,3 +94,21 @@ function drawProductsUI() {
     productDom.innerHTML = productsUI;
 }
 drawProductsUI();
+
+function addedToCart(id){
+    let choosenItem = products.find((item) => item.id === id);
+    console.log(choosenItem);
+}
+
+
+function ChecklogedUser() {
+    if (localStorage.getItem("username")) {
+        window.location = "cartproducts.html";
+    }
+    
+    else {
+        window.location = "login.html";
+    }
+}
+
+let addToCart = document.querySelector("#addcart");
